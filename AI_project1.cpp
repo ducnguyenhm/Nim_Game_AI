@@ -11,8 +11,11 @@ int main(){
         cout << "Computer takes: " << 1 << endl;
         numbers_of_sticks -= 1;
     }
-    else cout << "Computer takes: " << numbers_of_sticks %  (max_pick + 1)<< endl;
-    numbers_of_sticks -= (numbers_of_sticks % (max_pick + 1));
+    else {
+        cout << "Computer takes: " << numbers_of_sticks %  (max_pick + 1)<< endl;
+        numbers_of_sticks -= (numbers_of_sticks % (max_pick + 1));
+    }
+     
     while(1){
         cout << "The number of sticks left: " << numbers_of_sticks << endl;
         cout << "The number of sticks you want to take: ";
